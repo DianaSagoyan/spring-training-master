@@ -23,15 +23,18 @@ public class ComputerTest {
         SonyMonitor sony = container.getBean(SonyMonitor.class);
         DellCase dell = container.getBean(DellCase.class);
         AsusMotherboard asus = container.getBean(AsusMotherboard.class);
-        
+
         PC myPc2 =new PC(dell, sony, asus);
 
-        Monitor theMonitor = container.getBean(Monitor.class);
+//        Monitor theMonitor = container.getBean("monitorSony",Monitor.class);
+        Monitor theMonitor = container.getBean("sony",Monitor.class); //By Bean name
         Case theCase = container.getBean(Case.class);
         Motherboard theMotherboard = container.getBean(Motherboard.class);
 
 
         PC myPc = new PC(theCase, theMonitor, theMotherboard);
         myPc.powerUp();
+
+
     }
 }
