@@ -1,5 +1,8 @@
 package com.cydeo.bean_annotation.motherboardfactory;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AsusMotherboard extends Motherboard {
 
     public AsusMotherboard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
