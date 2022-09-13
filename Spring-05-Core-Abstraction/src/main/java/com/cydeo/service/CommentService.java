@@ -7,7 +7,6 @@ import com.cydeo.repository.CommentRepository;
 import com.cydeo.repository.DBCommentRepository;
 
 public class CommentService {
-
     private CommentRepository commentRepository;
     private CommentNotificationProxy emailCommentNotificationProxy;
 
