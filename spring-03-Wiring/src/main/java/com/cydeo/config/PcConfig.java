@@ -15,8 +15,13 @@ public class PcConfig {
     }
 
     @Bean
-    public Case caseDell(Dimensions dimensions){
-        return new DellCase("220B", "Dell", "240", dimensions);  //Tightly coupled
+    public Dimensions dimensions2(){
+        return new Dimensions(70, 20, 20);
+    }
+
+    @Bean
+    public Case caseDell(Dimensions dimensions2){  //Has to be the same name as method
+        return new DellCase("220B", "Dell", "240", dimensions2);  //Tightly coupled
 
     }
 }

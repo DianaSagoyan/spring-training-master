@@ -1,6 +1,7 @@
 package com.cydeo.streotype_annotation.motherboardfactory;
 
 import lombok.Getter;
+import org.springframework.stereotype.Component;
 
 @Getter
 public abstract class Motherboard {
