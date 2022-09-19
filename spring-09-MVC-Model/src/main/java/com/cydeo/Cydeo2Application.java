@@ -1,13 +1,13 @@
-package com.cydeo.spring09mvcmodel;
+package com.cydeo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring09MvcModelApplication {
+public class Cydeo2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring09MvcModelApplication.class, args);
+        SpringApplication.run(Cydeo2Application.class, args);
     }
 
 }
