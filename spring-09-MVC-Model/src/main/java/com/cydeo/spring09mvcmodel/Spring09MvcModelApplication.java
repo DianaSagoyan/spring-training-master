@@ -1,13 +1,13 @@
-package com.cydeo.spring08mvccontorller;
+package com.cydeo.spring09mvcmodel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring08MvcContorllerApplication {
+public class Spring09MvcModelApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring08MvcContorllerApplication.class, args);
+        SpringApplication.run(Spring09MvcModelApplication.class, args);
     }
 
 }
