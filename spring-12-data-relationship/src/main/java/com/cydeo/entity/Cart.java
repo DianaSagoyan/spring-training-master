@@ -9,7 +9,6 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "carts")
 public class Cart {
 
     @Id
@@ -17,6 +16,9 @@ public class Cart {
     private Long id;
 
     @ManyToMany
-    private List<Item> items;
+    @JoinTable(name = "cart_item_rel",
+            joinColumns = @JoinColumn(name = "c_id"),
+            inverseJoinColumns = @JoinColumn(name = "i_id"))
+    private List<Item> itemList;
 
 }
