@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class MovieCinema extends BaseEntity{
 
-    @Column(columnDefinition = "TIMESTAMP")
+//    @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime dateTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
